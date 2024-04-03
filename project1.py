@@ -46,34 +46,7 @@ def alarm():
             "Python Project is successfully completed :) !",
             icon_path="E:\Coding\Python Course\Project\clock.ico",
             duration=10)
-            from_ = "dixitaditya2001@gmail.com"
-
-            to = from_
-            subject = "Python Project!"
-            body = "Python Project is successfully completed :) !"
-            msg = f"Subject:{subject}\n\n{body}"
-            pwd = "kbraaahfhjeepzsk"
-            print("[+] Connecting to the server......")
-            conn = smtplib.SMTP("smtp.gmail.com", 587)
-
-            print("[+] Making Connection Secure......")
-            conn.starttls()
-
-            print("[+] Login to the server......")
-            conn.login(from_,pwd)
-
-            print("[+] Send Mail")
-            conn.sendmail(from_,to,msg)
-
-            print("[+] Close the connection...")
-            conn.close()
-
-            toaster = ToastNotifier()
-            toaster.show_toast("Email!!!",
-            "Email is sent successfully :) !",
-            icon_path="E:\Coding\Python Course\Project\clock.ico",
-            duration=10)
-            break
+         
             
         
  
